@@ -1,0 +1,41 @@
+{
+    "name": "a50/templates-twig",
+    "description": "A50 Templates",
+    "keywords": [
+        "a50",
+        "templer"
+    ],
+    "homepage": "https://github.com/a50/templates-twig",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Siarhei Bautrukevich",
+            "email": "hello@bautrukevich.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "twig/twig": "^3.7",
+        "a50/container": "dev-main",
+        "a50/directories": "dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+            "A50\\Templates\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "A50\\Templates\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
